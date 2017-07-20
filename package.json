@@ -1,0 +1,27 @@
+{
+  "name": "computeseviceclient",
+  "version": "0.0.1",
+  "description": "Бухгалтерия",
+  "main": "main.js",
+  "scripts": {
+    "test": "echo \"Error: no test specified\" && exit 1",
+    "start": "electron ."
+  },
+  "repository": {
+    "type": "git",
+    "url": "git+https://github.com/mrLob/ComputeServiceClient.git"
+  },
+  "keywords": [
+    "Bookkeeping"
+  ],
+  "author": "Евгений Мусевич",
+  "license": "MIT",
+  "bugs": {
+    "url": "https://github.com/mrLob/ComputeServiceClient/issues"
+  },
+  "homepage": "https://github.com/mrLob/ComputeServiceClient#readme",
+  "devDependencies": {
+    "angular": "^1.6.5",
+    "electron": "^1.6.11"
+  }
+}
