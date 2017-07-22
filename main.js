@@ -10,7 +10,7 @@ function openWindow(hg = 1000,wd = 750,bord = true,modl = false,load = 'template
             modal: modl
         }
     );
-    window.loadURL('file:///'+__dirname+'/'+load+'.html');
+    window.loadURL('file://'+__dirname+'/app/'+load+'.html');
 }
 
 app.on('ready',openWindow);
