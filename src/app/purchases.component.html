@@ -1,0 +1,14 @@
+<h1>{{title}}. sum {{sum}}</h1>
+  <ul class="purchases">
+    <li *ngFor="let purchase of purchases" 
+    [class.selected]="purchase === selectedPurchase" 
+    (click)="onSelect(purchase)">
+      <span class="badge">{{purchase.id}}</span> {{purchase.name}} | {{purchase.price}} BYN
+    </li>
+  </ul>
+  <div *ngIf="selectedPurchase">
+    <h2>
+      {{selectedPurchase.name | uppercase}} это моя покупка!
+    </h2>
+    <button (click)="gotoDetail()">Показать детали</button>
+  </div>

@@ -1,0 +1,11 @@
+  <div *ngIf="purchase">
+    <h2>{{purchase.name}}</h2>
+    <div>
+      <div><h3><label>ID: </label>{{purchase.id}}</h3></div>
+      <input [(ngModel)]="purchase.name" placeholder="name"/>
+      <input [(ngModel)]="purchase.price" placeholder="price (BYN)"/>
+      <input [(ngModel)]="purchase.count" placeholder="Count (pc.)"/>
+       
+    </div>
+  <button (click)="goBack()">Назад</button>
+</div>
